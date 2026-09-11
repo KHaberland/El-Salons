@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El-Salons — Rīga</title>
+  <meta name="description" content="El-Salons — frizētava Rīgā, Ilūkstes iela 109.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="site-header__inner">
+      <a class="logo" href="#top">EL-SALONS</a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        data-i18n-aria="aria_menu"
+        aria-label="Izvēlne"
+      >
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" data-i18n-aria="aria_nav" aria-label="Galvenā navigācija">
+        <ul class="site-nav__list">
+          <li><a href="#top" data-i18n="nav_home">Sākums</a></li>
+          <li><a href="#services" data-i18n="nav_services">Pakalpojumi</a></li>
+          <li><a href="#masters" data-i18n="nav_masters">Meistari</a></li>
+          <li><a href="#about" data-i18n="nav_about">Par salonu</a></li>
+          <li><a href="#gallery" data-i18n="nav_gallery">Galerija</a></li>
+          <li><a href="#contacts" data-i18n="nav_contacts">Kontakti</a></li>
+        </ul>
+
+        <div class="lang-switcher" role="group" data-i18n-aria="aria_lang" aria-label="Valoda">
+          <button type="button" class="lang-switcher__btn is-active" data-lang="lv" aria-pressed="true">LV</button>
+          <button type="button" class="lang-switcher__btn" data-lang="ru" aria-pressed="false">RU</button>
+          <button type="button" class="lang-switcher__btn" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" data-i18n-aria="aria_hero" aria-label="Sākums">
+      <div class="hero__media">
+        <img
+          class="hero__img"
+          src="images/hero/christianebrand-hairdressing-salon-2693077_1920.jpg"
+          alt="El-Salons telpa"
+          data-i18n-alt="hero_img_alt"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+        >
+      </div>
+      <div class="hero__overlay">
+        <div class="container hero__content">
+          <h1 data-i18n="hero_title">El-Salons</h1>
+          <p class="hero__subtitle" data-i18n="hero_subtitle">Frizētava</p>
+          <p class="hero__address">Ilūkstes iela 109, Rīga</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#services" data-i18n="hero_cta_services">Pakalpojumi</a>
+            <a class="btn btn--ghost" href="#contacts" data-i18n="hero_cta_find">Kā mūs atrast</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" id="intro">
+      <div class="container intro__inner">
+        <h2 data-i18n="intro_title">El-Salons</h2>
+        <p class="intro__text" data-i18n="intro_text">Vieta, kur var mierīgi sakārtot sevi, parunāties ar meistaru un saņemt ierastu kvalitatīvu servisu netālu no mājām.</p>
+        <a class="btn btn--text" href="#about" data-i18n="intro_more">Uzzināt vairāk</a>
+      </div>
+    </section>
+
+    <section class="section" id="services" data-i18n-aria="aria_services" aria-label="Pakalpojumi">
+      <div class="container">
+        <h2 class="section__title" data-i18n="services_title">Pakalpojumi</h2>
+        <ul class="services-grid" id="services-list"></ul>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="masters" data-i18n-aria="aria_masters" aria-label="Meistari">
+      <div class="container">
+        <h2 class="section__title" data-i18n="masters_title">Mūsu meistari</h2>
+        <ul class="masters-grid" id="masters-list"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="about" data-i18n-aria="aria_about" aria-label="Par salonu">
+      <div class="container">
+        <h2 class="section__title" data-i18n="about_title">Par salonu</h2>
+        <div class="about">
+          <div class="about__copy">
+            <div id="about-text"></div>
+            <p class="about__meta">
+              <span id="about-address">Ilūkstes iela 109, Vidzemes priekšpilsēta, Rīga, LV-1082</span>
+              <a id="about-phone" href="tel:+37167583578">tel.: 67 583 578</a>
+            </p>
+          </div>
+          <figure class="about__media">
+            <img
+              id="about-photo"
+              src="images/salon/michelle-maria-beauty-salon-3277314_1920.jpg"
+              alt="El-Salons telpa"
+              width="1000"
+              height="750"
+              loading="lazy"
+            >
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="why" data-i18n-aria="aria_why" aria-label="Kāpēc El-Salons">
+      <div class="container">
+        <h2 class="section__title" data-i18n="why_title">Kāpēc El-Salons?</h2>
+        <ul class="why-list" id="why-list"></ul>
+      </div>
+    </section>
+
+    <section class="section" id="gallery" data-i18n-aria="aria_gallery" aria-label="Galerija">
+      <div class="container">
+        <h2 class="section__title" data-i18n="gallery_title">Galerija</h2>
+        <ul class="gallery-grid" id="gallery-list"></ul>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contacts" data-i18n-aria="aria_contacts" aria-label="Kontakti">
+      <div class="container">
+        <h2 class="section__title" data-i18n="contacts_title">Kontakti</h2>
+        <div class="contacts">
+          <div class="contacts__info">
+            <dl class="contacts__list">
+              <div class="contacts__row">
+                <dt data-i18n="contacts_address">Adrese</dt>
+                <dd id="contacts-address">Ilūkstes iela 109, Vidzemes priekšpilsēta, Rīga, LV-1082</dd>
+              </div>
+              <div class="contacts__row">
+                <dt data-i18n="contacts_phone">Tālrunis</dt>
+                <dd><a id="contacts-phone" href="tel:+37167583578">67 583 578</a></dd>
+              </div>
+              <div class="contacts__row" id="contacts-email-row" hidden>
+                <dt data-i18n="contacts_email">E-pasts</dt>
+                <dd><a id="contacts-email" href="mailto:"></a></dd>
+              </div>
+              <div class="contacts__row">
+                <dt data-i18n="contacts_hours">Darba laiks</dt>
+                <dd id="contacts-hours">Precizējiet pa tālruni</dd>
+              </div>
+            </dl>
+            <div class="contacts__actions">
+              <a class="btn btn--primary" id="contacts-call" href="tel:+37167583578" data-i18n="contacts_call">Zvanīt</a>
+              <a
+                class="btn btn--outline"
+                id="contacts-route"
+                href="https://www.google.com/maps/dir/?api=1&destination=Il%C5%ABkstes+iela+109%2C+R%C4%ABga"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="contacts_route"
+              >Maršruts</a>
+            </div>
+          </div>
+          <div class="contacts__map" id="contacts-map">
+            <a
+              class="contacts__map-fallback"
+              id="contacts-map-link"
+              href="https://www.openstreetmap.org/?mlat=56.95435&mlon=24.19854#map=17/56.95435/24.19854"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="contacts_map_open"
+            >Atvērt karti</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Место под будущую запись (этап 10) -->
+    <div id="booking" hidden></div>
+  </main>
+
+  <div
+    class="lightbox"
+    id="lightbox"
+    hidden
+    role="dialog"
+    aria-modal="true"
+    data-i18n-aria="lightbox_dialog"
+    aria-label="Galerija"
+  >
+    <button
+      type="button"
+      class="lightbox__btn lightbox__btn--close"
+      data-lightbox="close"
+      data-i18n-aria="lightbox_close"
+      aria-label="Aizvērt"
+    >&times;</button>
+    <button
+      type="button"
+      class="lightbox__btn lightbox__btn--prev"
+      data-lightbox="prev"
+      data-i18n-aria="lightbox_prev"
+      aria-label="Iepriekšējais foto"
+    >‹</button>
+    <img class="lightbox__img" id="lightbox-img" alt="">
+    <button
+      type="button"
+      class="lightbox__btn lightbox__btn--next"
+      data-lightbox="next"
+      data-i18n-aria="lightbox_next"
+      aria-label="Nākamais foto"
+    >›</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="logo logo--footer">EL-SALONS</p>
+      <p>Ilūkstes iela 109, Rīga</p>
+      <p class="site-footer__copy">&copy; 2026 El-Salons</p>
+    </div>
+  </footer>
+
+  <script src="js/translations.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
